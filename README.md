@@ -1,26 +1,52 @@
-Shopping Website
-  Completed Pages
-    Index
-    Login and Sign Up
-    Search Product
-    Product Detail
-    Cart
-      Add Item
-      Remove Item
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    ul {
+      list-style-type: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shopping Website</h1>
 
+  <h2>Completed Pages</h2>
+  <ul>
+    <li>Index</li>
+    <li>Login and Sign Up</li>
+    <li>Search Product</li>
+    <li>Product Detail</li>
+    <li>Cart
+      <ul>
+        <li>Add Item</li>
+        <li>Remove Item</li>
+      </ul>
+    </li>
+  </ul>
 
-Currently Working On
-  User Profile
+  <h2>Currently Working On</h2>
+  <p>User Profile</p>
 
+  <h2>Upcoming Tasks</h2>
+  <p>Replace <code>localStorage</code> with SQL for authentication to improve security and persistence.</p>
 
-Upcoming Tasks
-  Replace localStorage with SQL for authentication to improve security and persistence.
+  <h2>Notes</h2>
+  <p>Cookies are used for storing user session data. If you encounter the "Already Logged In" message, please clear your cookies and try again.</p>
 
-
-Notes
-Cookies are used to store user session data. If you encounter the "Already Logged In" message, please clear your cookies and try again.
-
-Important
-If using Google Chrome, the site might be flagged as a phishing website. To proceed, please use Edge or Firefox. In these browsers, follow the steps below:
-Click "See Details"
-Select "Ignore the Risk" to continue
+  <h2>Important</h2>
+  <p>If using <strong>Google Chrome</strong>, the site might be flagged as a phishing website. To proceed, please use <strong>Edge</strong> or <strong>Firefox</strong>. In these browsers, follow the steps below:</p>
+  <ol>
+    <li>Click "See Details"</li>
+    <li>Select "Ignore the Risk" to continue.</li>
+  </ol>
+</body>
+</html>
