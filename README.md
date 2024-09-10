@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    ul {
-      list-style-type: none;
-    }
-  </style>
+   
 </head>
 <body>
   <h1>Shopping Website</h1>
