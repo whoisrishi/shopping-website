@@ -24,7 +24,7 @@
   <p>User Profile</p>
 
   <h2>Upcoming Tasks</h2>
-  <p>Replace <code>localStorage</code> with SQL for authentication to improve security and persistence.</p>
+  <p>Replace <code>localStorage</code> with SQL for authentication.</p>
 
   <h2>Notes</h2>
   <p>Cookies are used for storing user session data. If you encounter the "Already Logged In" message, please clear your cookies and try again.</p>
