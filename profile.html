@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sayhii{
+            display: flex; background-color: black; color: white; justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sayhii">
+
+    </div>
+    
+
+
+    <script>
+    let uname=JSON.parse(localStorage.getItem("setusername"))
+console.log(uname)
+
+document.getElementById("sayhii").innerHTML=`
+<h2> Hii ${uname} </h2>`
+
+    </script>
+</body>
+</html>

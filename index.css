@@ -1,0 +1,239 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #d9e6f2;
+  --accent-color: #e94e77;
+  --text-color: #333;
+  --border-color: #ccc;
+  --font-family: "Arial", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin-right: 10px;
+  background-color: var(--secondary-color);
+}
+
+.container {
+  /* background-image: url("https://plus.unsplash.com/premium_photo-1683887064255-1c428d0b3934?q=80&w=1943&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+  background-image: url("https://images.pexels.com/photos/5650049/pexels-photo-5650049.jpeg");
+  
+  width: 100%;
+  height: 570px;
+  background-size: cover ;
+  background-repeat: no-repeat;
+  /* background-position-x: 100px; */
+
+  border-bottom: none;
+  border-radius: 15px;
+}
+
+.navbar {
+  height: 50px;
+  display: flex;
+}
+
+.icon {
+  width: 25%;
+  border-top-left-radius: 15px;
+}
+
+.middle,
+.bottom,
+.icon {
+  background-color: white;
+
+  color: white;
+}
+
+.middle {
+  width: 30%;
+  border-bottom-right-radius: 24px;
+  /* border: none; */
+  /* border-bottom: 2px solid var(--border-color); */
+}
+
+.top {
+  background-color: transparent;
+  z-index: 4;
+  width: 25%;
+  /* border-top-left-radius: 30px;
+  border-top-right-radius: 30px; //curve   */
+}
+
+.bottom {
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 15px;
+
+  width: 20%;
+  /* border-bottom: 2px solid var(--border-color); */
+}
+
+.cart-button {
+  background-color: white;
+  color: var(--text-color);
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 30%;
+  /* border: 2px solid var(--border-color); */
+  border: none;
+  border-radius: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px;
+  padding-left: 14px;
+  width: auto;
+  display: flex;
+}
+
+.searchbar {
+  margin-top: 10px;
+  width: 85%;
+  padding: 8px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  outline: none;
+}
+
+.searchbar:focus {
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+}
+
+.contentcat {
+  position: relative;
+  margin-top: 15px;
+  height: 100px;
+  width: 100%;
+  background-color: var(--accent-color);
+}
+
+.productcat {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.productcat > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.content {
+  height: auto;
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  gap: 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.card {
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  max-width: 80%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h3 {
+  margin: 5px 0;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+}
+
+.card h4 {
+  height: 15px;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#viewmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(95, 95, 78); */
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  bottom: -100%;
+  transition: 0.41s ease;
+}
+
+.card:hover #viewmore {
+  bottom: 0;
+}
+
+.card:hover > h4 {
+  margin-bottom: 25px;
+}
+
+.card:hover > h5 {
+  display: none;
+}
+
+.card > h3 {
+  height: 80%;
+  display: block;
+}
+
+#viewmore > a {
+  color: #a07580;
+  text-decoration: none;
+  text-shadow: 1px 0px #d6c2c2;
+}
+
+i:hover {
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 0px 25px rgba(10, 12, 12, 0.7);
+}
+
+a:visited,
+a:active {
+  color: black;
+}
+
+button {
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
