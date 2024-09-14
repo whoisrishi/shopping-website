@@ -6,29 +6,54 @@
     <title>Document</title>
     <link rel="stylesheet" href="cart.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      nav {
+        width: 100%;
+        height: 50px;
+        display: flex;
+      }
+
+      .nav-left {
+        width: 60%;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        border-right: 2px solid yellow;
+        border-bottom-right-radius: 25px;
+      }
+
+      .nav-center {
+        width: 20%;
+        background-color: transparent;
+        height: 100%;
+      }
+
+      .nav-right {
+        background-color: rgb(255, 255, 255);
+        width: 20%;
+        height: 100%;
+        border-right: 2px solid yellow;
+        border-bottom-left-radius: 25px;
+      }
+
+      .cart-button {
+        margin: 0 10px; 
+      }
+
+
+    </style>
   </head>
   <body>
-      <nav style="width: 100%;height: 50px; display: flex;">
-
-        <div style="width: 60%; background-color: rgb(255, 255, 255);height: 100%; border-right: 2px solid yellow; border-bottom-right-radius: 25px;"></div>
-        <div style="width: 20%; background-color: transparent;height: 100%;"></div>
-
-        <div style="background-color: rgb(255, 255, 255); width: 20%;height: 100%; border-right: 2px solid yellow; border-bottom-left-radius: 25px;">
-          <button class="cart-button" onclick="window.location.href='cart.html';"><i class="fa-solid fa-cart-shopping"></i></button> &nbsp; &nbsp;
-
-            <button class="cart-button" onclick="window.location.href='login.html';"> <i class="fa-solid fa-user"></i></button>
-
-
-
-        </div>
-
-
-      </nav>
+    <nav>
+      <div class="nav-left"></div>
+      <div class="nav-center"></div>
+      <div class="nav-right">
+        <button class="cart-button" onclick="window.location.href='cart.html';"><i class="fa-solid fa-cart-shopping"></i></button>
+        <button class="cart-button" onclick="window.location.href='login.html';"><i class="fa-solid fa-user"></i></button>
+      </div>
+    </nav>
     <div id="container">
       <div id="cartProduct"></div>
-
       <div id="totalPrice"></div>
-
     </div>
     <script src="cart.js"></script>
   </body>

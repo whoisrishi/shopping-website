@@ -1,45 +1,44 @@
 let content = document.getElementsByClassName("content")[0];
-let products = []; // Global variable to store products
+let products = [];
 
 function fetchFun() {
-    return fetch("https://dummyjson.com/products")
-        .then((val) => val.json())
-        .then((val) => {
-            products = val.products; // Store products in the global variable
-            localStorage.setItem("products", JSON.stringify(products));
-            return products;
-        });
+  return fetch("https://dummyjson.com/products")
+    .then((val) => val.json())
+    .then((val) => {
+      products = val.products;
+      localStorage.setItem("products", JSON.stringify(products));
+      return products;
+    });
 }
 
-document.getElementById("dosearch").addEventListener('input', dosearch);
+document.getElementById("dosearch").addEventListener("input", dosearch);
 
 function dosearch(event) {
-    const searchTerm = event.target.value.toLowerCase(); // Get the search term
-    const filteredProducts = products.filter(product => 
-        product.title.toLowerCase().includes(searchTerm) // Filter products based on title
+  if (JSON.parse(localStorage.getItem("setusername") != null)) {
+    const searchTerm = event.target.value.toLowerCase();
+    const filteredProducts = products.filter((product) =>
+      product.title.toLowerCase().includes(searchTerm)
     );
-    displayProducts(filteredProducts); // Display the filtered products
+    displayProducts(filteredProducts);
+  }
 }
 
 function displayProducts(products) {
-    localStorage.getItem("setusername")
-        console.log("You are already logged in ")
+  let output = "";
+  products.forEach((res) => {
+    let star = "";
+    let fullStar = Math.round(res.rating);
+    let emptyStar = 5 - fullStar;
 
-    let output = '';
-    products.forEach((res) => {
-        let star = "";
-        let fullStar = Math.round(res.rating);
-        let emptyStar = 5 - fullStar;
+    for (let i = 0; i < fullStar; i++) {
+      star += "★";
+    }
 
-        for (let i = 0; i < fullStar; i++) {
-            star += "★"; 
-        }
+    for (let i = 0; i < emptyStar; i++) {
+      star += "☆";
+    }
 
-        for (let i = 0; i < emptyStar; i++) {
-            star += "☆"; 
-        }
-        
-        output += `
+    output += `
         <div class="card">
             <img src="${res.thumbnail}">
             <h3>${res.title}</h3>
@@ -50,38 +49,34 @@ function displayProducts(products) {
             </div>
         </div>
         `;
-    });
+  });
 
-    content.innerHTML = output; // Update the content with the filtered products
+  content.innerHTML = output;
 }
 
 fetchFun().then((products) => {
-    if (products) {
-        displayProducts(products); // Display all products initially
-    }
+  if (products && JSON.parse(localStorage.getItem("setusername") != null)) {
+    displayProducts(products);
+  } else {
+    alert("Please Login to your account first");
+    window.location.href = "login.html";
+  }
 });
 
 function viewMore(product) {
-    localStorage.setItem("searchID", product);
-    console.log("working");
-    window.location.href = "./viewmore.html";
+  localStorage.setItem("searchID", product);
+  console.log("working");
+  window.location.href = "./viewmore.html";
 }
 
+function islogged() {
+  console.log(localStorage.getItem("setusername"));
 
-
-function islogged(){
-    console.log(localStorage.getItem("setusername") )
-    
-    if(localStorage.getItem("setusername") != null ){
-        alert("already Logged in")
-        window.location.href='profile.html'
-    }else{
-        alert("Need to sign UP")
-        window.location.href='login.html'
-
-        
-        }
-
-    // if(){
-    // }
+  if (localStorage.getItem("setusername") != null) {
+    // alert("Welcome to Page")
+    window.location.href = "profile.html";
+  } else {
+    alert("Need to sign UP");
+    window.location.href = "login.html";
+  }
 }

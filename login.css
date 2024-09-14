@@ -1,110 +1,103 @@
 body {
-    padding: 0;
-    margin: 10px;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-
-
+  padding: 0;
+  margin: 10px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
 .container {
-    width: 90vw;
-    height: 90vh;
-    display: flex;
-    border-radius: 50px;
-    border: 1px solid black;
-    overflow: hidden;
-    margin-left: 50px;
-
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  border-radius: 50px;
+  border: 1px solid black;
+  overflow: hidden;
+  margin-left: 50px;
 }
 
 #left {
-    width: 50%;
-    height: 100%;
-    background-color: blue;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    padding-left: 215px;
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-left: 400px;
+  padding-top: 110px;
 }
 
 #right {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
-    width: 270px;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+  width: 270px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 label {
-    margin: 5px 0;
-    font-size: 1rem;
-    display: block;
+  margin: 5px 0;
+  font-size: 1rem;
+  display: block;
 }
 
 button {
-    width: 270px;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
+  width: 270px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: darkblue;
+  background-color: darkblue;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-
-#left>button{
-    background-color: aquamarine;
+#left > button {
+  background-color: aquamarine;
 }
 
-
-
-
-nav{
-    width: 15px;
-    transition: width 0.4s ease-in;
-    overflow: hidden;
+nav {
+  width: 55px;
+  transition: width 0.4s ease-in;
+  overflow: hidden;
 }
 
-nav:hover{
-    width: 100px;
+nav:hover {
+  width: 150px;
 }
 
-#left{
-    border-left: 12px solid rgba(0, 0, 0, 0.15);
+#left {
+  border-left: 12px solid rgba(0, 0, 0, 0.15);
 }
 
-nav>button{
-    margin-top: 100px;
-    background-color: rgb(218, 106, 124);
-    padding: 10px;
-    margin-left: 9px;   
-    width: auto;
-    font-size: small;
+nav > button {
+  margin-top: 100px;
+  background-color: rgb(218, 106, 124);
+  padding: 10px;
+  margin-left: 10px;
+  width: auto;
+  font-size: small;
 }

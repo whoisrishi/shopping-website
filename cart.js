@@ -19,15 +19,13 @@ function displayCart() {
         </div>
     </div>
 `;
-
   });
 
   cartProduct.innerHTML = output;
   totalPrice.innerHTML = `
   <h4>Total Price: ${total.toFixed(2)}</h4>
   <button id="buyBtn"> Processed to Buy</button>
-  `
-
+  `;
 }
 
 function deleteProduct(deleteMe) {
@@ -43,21 +41,18 @@ function deleteProduct(deleteMe) {
 
 function emptyCart() {
   document.body.style.display = "flex";
-  document.body.style.justifyContent = "center"; 
-  document.body.style.alignItems = "center"; 
-  document.body.style.height = "100vh"; 
-  document.body.style.margin = "0"; 
-  document.body.style.backgroundColor = "lightblue"; 
+  document.body.style.justifyContent = "center";
+  document.body.style.alignItems = "center";
+  document.body.style.height = "100vh";
+  document.body.style.margin = "0";
+  document.body.style.backgroundColor = "lightblue";
 
   let notempty = `
   <div><h1 style="color: #4a90e2;">Your Shopping Cart is Empty</h1>
     <p style="color: #333;">Looks like you haven't added anything to your cart yet.</p>
-    <a href="index.html" style="text-decoration: none; background-color: #e94e77; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: background-color 0.3s;">Continue Shopping</a></div> `
+    <a href="index.html" style="text-decoration: none; background-color: #e94e77; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; transition: background-color 0.3s;">Continue Shopping</a></div> `;
 
-
-  document.getElementsByTagName(
-    "body"
-  )[0].innerHTML = notempty;
+  document.getElementsByTagName("body")[0].innerHTML = notempty;
   totalPrice.remove();
   console.log("Start SHopping");
 }

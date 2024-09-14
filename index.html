@@ -5,30 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .logo div {
+        height: 25px;
+        border-radius: 50%;
+        width: 25px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <nav class="navbar">
         <div class="icon">
           <h2 class="logo">
-            <div
-              style="
-                height: 25px;
-                border-radius: 50%;
-                width: 25px;
-                background-color: black;
-                color: white;
-                text-align: center;
-              "
-            >
-              S
-            </div>
+            <div onclick="window.location.href=`index.html`">S</div>
             Hoping
           </h2>
         </div>
         <div class="middle">
-          <a href="#content"> <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+          <a href="#content">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i
+          ></a>
           <input
             type="text"
             class="searchbar"
@@ -38,33 +47,19 @@
         </div>
         <div class="top"></div>
         <div class="bottom">
-            <button class="cart-button" onclick="window.location.href='cart.html';"><i class="fa-solid fa-cart-shopping"></i></button> &nbsp; &nbsp;
-
-            <button class="cart-button" onclick="islogged()"> <i class="fa-solid fa-user"></i></button>
-
-
+          <button
+            class="cart-button"
+            onclick="window.location.href='cart.html'"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          &nbsp; &nbsp;
+          <button class="cart-button" onclick="islogged()">
+            <i class="fa-solid fa-user"></i>
+          </button>
         </div>
       </nav>
-      <!-- remove code
-             <div class="boderaround">
-                <div id="onlyforboder"></div>
-                <div id="onlyforboderright"></div>
-            </div> -->
     </div>
-
-    <!-- <div class="contentcat">
-
-        <div class="productcat">
-
-            <div> <a href="ok">Cat1</a></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-
-        </div> 
-
-    </div> -->
 
     <div class="content" id="content"></div>
 
