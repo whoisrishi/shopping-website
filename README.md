@@ -18,10 +18,13 @@
         <li>Remove Item</li>
       </ul>
     </li>
+  <li>User Profile</li>
   </ul>
 
+  <h3>Changelog</h3>
+  <li> Now user must be logged in to view product.ṭ</li>
+
   <h2>Currently Working On</h2>
-  <p>User Profile</p>
 
   <h2>Upcoming Tasks</h2>
   <p>Replace <code>localStorage</code> with SQL for authentication.</p>
