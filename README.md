@@ -22,7 +22,7 @@
   </ul>
 
   <h3>Changelog</h3>
-  <li> Now user must be logged in to view product.ṭ</li>
+  <li> Now user must be logged in to view product.</li>
 
   <h2>Currently Working On</h2>
 
