@@ -22,12 +22,9 @@
   </ul>
 
   <h3>Changelog</h3>
-  <li> Now user must be logged in to view product.</li>
+  <li> Now, the user must be logged in to view the product.</li> 
 
-  <h2>Currently Working On</h2>
 
-  <h2>Upcoming Tasks</h2>
-  <p>Replace <code>localStorage</code> with SQL for authentication.</p>
 
   <h2>Notes</h2>
   <p>Cookies are used for storing user session data. If you encounter the "Already Logged In" message, please clear your cookies and try again.</p>
